@@ -1,0 +1,41 @@
+body {
+    min-height: 100%;
+    background-image: url(https://images7.alphacoders.com/592/592678.jpg);
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0; /* Remova as margens padrão do body para ocupar a altura completa */
+    display: flex; /* Use flex para centralizar verticalmente */
+    /*justify-content: center; /* Centralizar horizontalmente */
+    
+}
+
+body::before {
+    content: ""; /* Pseudo-elemento vazio */
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(199, 218, 230, 0.356); /* Cor de fundo semi-transparente */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do body */
+}
+
+h1 {
+    margin: 0; /* Remova as margens padrão do título */
+    color: white; /* Cor do texto */
+        background-color: rgba(0, 0, 0, 0.801); /* Cor de fundo semi-transparente */
+        padding: 20px; /* Adicione algum espaçamento interno */
+        border-radius: 10px; /* Adicione bordas arredondadas */
+        align-items: first baseline; /* Centralizar verticalmente */
+}
+h2 { 
+    margin: 0; /* Remova as margens padrão do título */
+    color: white; /* Cor do texto */
+        background-color: rgba(0, 0, 0, 0.801); /* Cor de fundo semi-transparente */
+        padding: 10px; /* Adicione algum espaçamento interno */
+        border-radius: 10px; /* Adicione bordas arredondadas */
+        align-items:center; /* Centralizar verticalmente */  
+}
