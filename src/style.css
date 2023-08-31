@@ -1,41 +1,76 @@
 body {
-    min-height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-image: url(https://images7.alphacoders.com/592/592678.jpg);
     background-size: cover;
-    height: 400px;
-    width: 100%;
+  }
+  
+  .background-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .title-container {
     text-align: center;
-    margin: 0; /* Remova as margens padrão do body para ocupar a altura completa */
-    display: flex; /* Use flex para centralizar verticalmente */
-    /*justify-content: center; /* Centralizar horizontalmente */
-    
-}
-
-body::before {
-    content: ""; /* Pseudo-elemento vazio */
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(199, 218, 230, 0.356); /* Cor de fundo semi-transparente */
-    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo do body */
-}
-
-h1 {
-    margin: 0; /* Remova as margens padrão do título */
-    color: white; /* Cor do texto */
-        background-color: rgba(0, 0, 0, 0.801); /* Cor de fundo semi-transparente */
-        padding: 20px; /* Adicione algum espaçamento interno */
-        border-radius: 10px; /* Adicione bordas arredondadas */
-        align-items: first baseline; /* Centralizar verticalmente */
-}
-h2 { 
-    margin: 0; /* Remova as margens padrão do título */
-    color: white; /* Cor do texto */
-        background-color: rgba(0, 0, 0, 0.801); /* Cor de fundo semi-transparente */
-        padding: 10px; /* Adicione algum espaçamento interno */
-        border-radius: 10px; /* Adicione bordas arredondadas */
-        align-items:center; /* Centralizar verticalmente */  
-}
+    max-width: 150px;
+    margin: 20px;
+  }
+  
+  .description-container {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 70%; /* Defina a largura do container da descrição */
+    margin-top: 20px; /* Margem acima da descrição */
+  }
+  
+  .content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  h1 {
+    color: #fca311;
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .description-container h2 {
+    color: white;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #fca311;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e57800;
+  }
