@@ -1,0 +1,10 @@
+figure {
+    border: 5px solid red;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  #cardsContainer {
+    border: 5px solid green;
+    display: flex;
+    flex-wrap: wrap;
+  }
