@@ -1,10 +1,33 @@
+body {
+  background-image: url(https://images7.alphacoders.com/592/592678.jpg);
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 figure {
-    border: 5px solid red;
-    width: 180px;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  #cardsContainer {
-    border: 5px solid green;
-    display: flex;
-    flex-wrap: wrap;
-  }
+  border: 5px solid red;
+  width: 180px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#cardsContainer {
+  border: 5px solid green;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  padding: 20px;
+  text-align: center;
+  color: yellow;
+  font-size: 50px;
+  margin: 0px;
+  font-family: 'Pokemon Solid', sans-serif;
+  color: rgba(yellow);
+     -webkit-text-stroke: 1px blue;
+}
