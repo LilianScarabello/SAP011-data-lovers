@@ -9,25 +9,66 @@ body {
   background-attachment: fixed;
 }
 
-figure {
-  border: 5px solid red;
-  width: 180px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#cardsContainer {
-  border: 5px solid green;
-  display: flex;
-  flex-wrap: wrap;
+section {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 0px;
 }
 
 h1 {
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
   text-align: center;
   color: yellow;
-  font-size: 50px;
+  font-size: 60px;
   margin: 0px;
   font-family: 'Pokemon Solid', sans-serif;
   color: rgba(yellow);
      -webkit-text-stroke: 1px blue;
+}
+
+figure {
+  border-radius: 10px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255);
+  font-family: 'Calibri';
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: solid red;
+}
+
+figure img {
+  width: 120px;
+  align-items: center;
+  border: solid blue;
+}
+
+#cardsContainer {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 65px;
+  margin: 10px;
+}
+
+.PokemonType {
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  color:rgba(255, 255, 255)
+}
+
+#typePokemon {
+  background-color: rgba(255, 255, 255, 0.9);
+
 }

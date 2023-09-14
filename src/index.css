@@ -9,12 +9,11 @@ body {
   background-attachment: fixed;
 }
 .title-container { /* h1 e logo */
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
   justify-content: center;
   align-items: center;  
 }
 h1 {
+  background-color: rgba(0, 0, 0, 0.8);
   padding: 20px;
   text-align: center;
   color: yellow;
@@ -66,18 +65,4 @@ button {
 
 button:hover {
   background-color: #061453;
-}
-
-figure {
-  border: 5px solid red;
-  width: 180px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#cardsContainer {
-  background-color: #2111fc;
-  border: 5px solid green;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 200px;
 }
