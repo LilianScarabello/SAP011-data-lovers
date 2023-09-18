@@ -63,7 +63,7 @@ function buscarCard() {
     </figure>`;
     cardContainer.innerHTML += template;
   }
-};
+}
 cardsName.addEventListener("input", buscarCard);
 
 const ordenarAZ = document.querySelector("#nameSort");
