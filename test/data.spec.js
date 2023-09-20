@@ -51,6 +51,10 @@ describe('agrupamento dos testes da função de ordenação por nome', () => {
   });
 
   it('deve retornar pokemons pela seleção de a-z ou z-a', () => {
-    expect (ordenacao(pokemons, "A-Z")).toBe([bulbasaur,butterfree,pikachu]);
+    expect (ordenacao(pokemons, "A - Z")).toStrictEqual([bulbasaur,butterfree,pikachu]);
+  });
+
+  it('deve retornar pokemons pela seleção de a-z ou z-a', () => {
+    expect (ordenacao(pokemons, "Z - A")).toStrictEqual([pikachu,butterfree,bulbasaur]);
   });
 });

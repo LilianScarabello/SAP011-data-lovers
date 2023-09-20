@@ -67,10 +67,10 @@ function buscarCard() {
 cardsName.addEventListener("input", buscarCard);
 
 const ordenarAZ = document.querySelector("#nameSort");
-ordenarAZ.addEventListener("click", function (e) {
+ordenarAZ.addEventListener("change", function (e) {
   e.preventDefault();
   const newPokemon = allPokemons.pokemon;
-  const alphaResults = ordenacao(newPokemon,ordenarAZ);
+  const alphaResults = ordenacao(newPokemon, ordenarAZ.value);
   const cardContainer = document.getElementById("cardsContainer");
   cardContainer.innerHTML = "";
   for (let i = 0; i < alphaResults.length; i++) {

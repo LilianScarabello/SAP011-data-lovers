@@ -8,9 +8,9 @@ export function resultadoPesquisa(pokemons, name) {
   return sugestaoResultado;
 }
 
-export function ordenacao(pokemon,ordenarAZ) {
+export function ordenacao(pokemon, ordenarAZ) {
   pokemon.sort((a, b) => a.name.localeCompare(b.name));
-  if (ordenarAZ.value === "A - Z") {
+  if (ordenarAZ === "A - Z") {
     return pokemon;
   } else {
     return pokemon.reverse();
