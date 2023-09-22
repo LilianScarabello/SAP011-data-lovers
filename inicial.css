@@ -1,0 +1,80 @@
+body {
+  background-image: url(https://images7.alphacoders.com/592/592678.jpg);
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  padding-top: 0px;
+}
+
+h1 {
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  color: yellow;
+  font-size: 60px;
+  margin: 0px;
+  font-family: 'Pokemon Solid', sans-serif;
+  color: rgba(yellow);
+     -webkit-text-stroke: 1px blue;
+}
+
+figure {
+  border-radius: 10px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255);
+  font-family: 'Calibri';
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  width: 120px;
+  align-items: center;
+}
+
+#cardsContainer {
+  background-color: rgba(255, 255, 255, 0.4);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 65px;
+  margin: 10px;
+}
+
+.PokemonType {
+  color:rgba(255, 255, 255)
+}
+
+#typePokemon {
+  background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+.menuPesquisa {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
